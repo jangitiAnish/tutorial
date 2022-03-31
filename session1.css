@@ -1,0 +1,473 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(water.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 120px;
+    cursor: pointer;
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+     position: relative;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  .navbar ul li::after{
+      content: '';
+    height: 3px;
+    width:0% ;
+    background: #009688;
+    position:absolute;
+    left: 0;
+    bottom: -10px ;
+    transition: 0.5s;
+  }
+  navbar ul li:hover::after{
+    width: 100%;
+      position: absolute;
+      border: #fff;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #fff;
+  }
+  .content{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #fff;
+  }
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 00.5s;
+}
+button:hover span
+{
+width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+      <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p> we are leading E-Commerse website used by billions of people
+                  we own their faith we has been succesfull for the last lo years
+              </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+91 9553338802</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">sales</div>
+            <div><a href="#"> automobiles</a></div>
+            <div><a href="#">clothing</a></div>
+            <div><a href="#">hardware</a></div>
+            <div><a href="#">groceries</a></div>
+            <div><a href="#">foot wear</a></div>
+            <div><a href="#">housing</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">LOGIN</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
+        </div>
+    </footer>
+    
+    
+    
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  height: 28%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #111;
+ }
+ footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+ footer .content p,a{
+  color: #fff;
+ }
+ footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+ }
+ footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+ 
+ }
+ footer .content p{
+  text-align: justify;
+ }
+ footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+ }
+ footer .content .lower i{
+  padding-right: 16px;
+ }
+ footer .content .middle{
+  padding-left: 80px;
+ }
+ footer .content .middle a{
+  line-height: 32px;
+ }
+ footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+ }
+ footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+ }
+ .content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+ }
+ footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+ }
+ .content .media-icons a:hover{
+  border-color: #eb2f06;
+ }
+ footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+ }
+ footer .bottom a{
+  color: #eb2f06;
+ }
+ footer a{
+  transition: all 0.3s ease;
+ }
+ footer a:hover{
+  color: #eb2f06;
+ }
+ @media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+ }
+ @media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+ }
+ @media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+ }
+ 
+
+
+
+
+
+
+
+ <div class="product_row d-flex">
+ <div class="product_body">
+   <div class="product_description">
+     <p style="color: black;">
+       Boya BYM1 Omnidirectional Lavalier Condenser Microphone with 20ft Audio Cable (Black)
+     </p>
+   </div>
+   <div class="product_price">
+     <p style="color: black;">&#8377;<span style="color: black;">500</span></p>
+
+   </div>
+ <ul class="rating dflex" style="color: black;">
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="far fa-star"></i>
+   </li>
+ </ul>  
+   <div class="product_img">
+     <img src="bot.jpg" alt="">
+
+   </div>
+   <div class="button-cart d-flex">
+     <a href=""><button>add to cart</button></a>
+   </div>
+ </div>
+ <div class="product_body">
+   <div class="product_description">
+     <p style="color: black;">
+       Boya BYM1 Omnidirectional Lavalier Condenser Microphone with 20ft Audio Cable (Black)
+     </p>
+   </div>
+   <div class="product_price">
+     <p style="color: black;">&#8377;<span style="color: black;">500</span></p>
+
+   </div>
+ <ul class="rating dflex" style="color: black;">
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="far fa-star"></i>
+   </li>
+ </ul>  
+   <div class="product_img">
+     <img src="bot.jpg" alt="">
+
+   </div>
+   <div class="button-cart d-flex">
+     <a href=""><button>add to cart</button></a>
+   </div>
+ </div>
+ <div class="product_body">
+   <div class="product_description">
+     <p style="color: black;">
+       Boya BYM1 Omnidirectional Lavalier Condenser Microphone with 20ft Audio Cable (Black)
+     </p>
+   </div>
+   <div class="product_price">
+     <p style="color: black;">&#8377;<span style="color: black;">500</span></p>
+
+   </div>
+ <ul class="rating dflex" style="color: black;">
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="fas fa-star"></i>
+   </li>
+   <li>
+     <i class="far fa-star"></i>
+   </li>
+ </ul>  
+   <div class="product_img">
+     <img src="bot.jpg" alt="">
+
+   </div>
+   <div class="button-cart d-flex">
+     <a href=""><button>add to cart</button></a>
+   </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product .product_row{
+  justify-content: space-evenly;
+}
+.product .product_row .product_body{
+  padding: 20px;
+}
+.product .product_row .product_body .product_description p{
+  font-size: 18px;
+}
+.product .product_row .product_body .product_price p{
+  font-size: 18px;
+  margin: 5px 0;
+}
+.product .product_row .product_body .product_price p span{
+  font-size: 20px;
+  font-weight: bold;
+}
+.product .product_row .product_body .product_img{
+  text-align: center;
+}
+.product .product_row .product_body .product_img img{
+  height:200px ;
+  margin: 10px 0px;
+}
+.product .product_row .button-cart{
+  justify-content: center;
+  margin: 10px 0px;
+}
+.product .product_row .button-cart button{
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: goldenrod;
+  font-size: 16px;
+
+}
